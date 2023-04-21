@@ -3,7 +3,24 @@
 
   padding: 0px;
 }
-body{
-    background-color: rgba(0,0,0,0.9);
-    background-image: url(IN-en-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+body::-webkit-scrollbar,
+.section::-webkit-scrollbar {
+  display: none;
+}
+.section {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: none;
+}
+h3 {
+  display: block;
+}
+section > img {
+  margin: 5px;
 }
