@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Open+Sans&display=swap");
 * {
   margin: 0px;
-
   padding: 0px;
+  font-family: "Kanit", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 body {
   background-color: rgba(0, 0, 0, 0.9);
@@ -11,6 +13,55 @@ body::-webkit-scrollbar,
 .section::-webkit-scrollbar {
   display: none;
 }
+header {
+  padding: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.121);
+}
+#right-nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#logo,
+img[alt="search"],
+img[alt="notification"],
+#avatar {
+  padding: 2px;
+  height: 24px;
+  align-items: center;
+  background-color: transparent;
+}
+input {
+  color: #fff;
+  background-color: transparent;
+}
+#left-nav {
+  display: flex;
+  height: 10%;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+li {
+  margin-left: 2px;
+  padding-left: 8px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  color: rgb(205, 204, 204);
+}
 .section {
   margin: 20px;
   display: flex;
@@ -18,9 +69,17 @@ body::-webkit-scrollbar,
   overflow-x: scroll;
   overflow-y: none;
 }
-h3 {
+#title {
   display: block;
+  margin: 8px 0px 2px 20px;
 }
-section > img {
-  margin: 5px;
+.section > img {
+  padding-right: 15px;
+}
+img {
+  border-radius: 15px;
+}
+.section > img:hover {
+  transition: 500ms;
+  transform: scale(1.2);
 }
